@@ -7,15 +7,33 @@
 <body>
 
 <form>
-    <input id="thang" type="text"/> & bnsp;
-    <input type="button" value="Tính số ngày" onclick="tinhsongay()"/>
+    <label for="input1"></label>
+    <input id="input1" type="text">
+    <input type="button" value="Tính số ngày" onclick="tinhsongay();"/><br>
+    <p id="display"></p>
 
 </form>
 <script>
-    let month = +document.getElementById('thang').value
-    function tinhsongay(){
-        switch (month){
-            case
+    month =parseInt(document.getElementById('input1').value);
+    function tinhsongay() {
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.getElementById('display').innerText = ('Tháng '+month+' có 31 ngày');
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.getElementById('display').innerText = ('Tháng '+month+' có 30 ngày');
+                break;
+            case 2:
+                document.getElementById('display').innerText = ('Tháng '+month+' có 28 hoặc 29 ngày');
         }
     }
 </script>
