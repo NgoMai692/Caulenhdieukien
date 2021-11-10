@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sukienphim</title>
+</head>
+<body>
+    <img id="nobita" src="nobita.jpg" height="100" width="80" alt="không hiển thị"/>
+
+    <script>
+        function upArrowPressed(){
+            let element = document.getElementById('nobita');
+            element.style.top=parseInt(element.style.top)-5 +'px';
+        }
+        function downArrowPressed(){
+            let element = document.getElementById('nobita');
+            element.style.top=parseInt(element.style.top)+5 +'px';
+        }
+        function leftArrowPressed(){
+            let element = document.getElementById('nobita');
+            element.style.left=parseInt(element.style.top)-5 +'px';
+        }
+        function rightArrowPressed(){
+            let element = document.getElementById('nobita');
+            element.style.left=parseInt(element.style.top)+5 +'px';
+        }
+
+    </script>
+</body>
+</html>
