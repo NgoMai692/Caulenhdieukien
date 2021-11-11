@@ -10,21 +10,25 @@
     let so2 = +prompt('Nhập số thứ 2; ');
     let so3 = +prompt('Nhập số thư 3: ');
     let max ='';
-    if (so1 === so2 ||so1 === so3){
-        if (so1 > so2 ){
-            alert('số lớn nhất là số thứ 1 và số thứ 3: '+so1+" "+so3)
-        }else if(so1 === so2){
-            alert('Số lớn nhất là số thứ 1 và số thứ 2: '+so1+" "+so2)
+    if (so1===so2&&so1===so3) {
+        alert('ba số bằng nhau')
+    }else
+           if (so1 === so2 ||so1 === so3){
+            if (so1 > so2 ){
+                alert('số lớn nhất là số thứ 1 và số thứ 3: '+so1+" "+so3)
+            }else if(so1 === so2){
+                alert('Số lớn nhất là số thứ 1 và số thứ 2: '+so1+" "+so2)
+            }else{
+                alert('Số lớn nhất là số thứ 2 và số thứ 3: '+so2+" "+so3)
+            }
+        }else if(so1 > so2 && so1 > so3){
+            alert('số lớn nhất là số thứ nhất: '+so1);
+        }else if(so2>so3){
+            alert('Số lớn nhất là số thứ 2: '+so2);
         }else{
-            alert('Số lớn nhất là số thứ 2 và số thứ 3: '+so2+" "+so3)
+            alert('Số lớn nhất là số thứ 3: '+so3);
         }
-    }else if(so1 > so2 && so1 > so3){
-        alert('số lớn nhất là số thứ nhất: '+so1);
-    }else if(so2>so3){
-        alert('Số lớn nhất là số thứ 2: '+so2);
-    }else{
-        alert('Số lớn nhất là số thứ 3: '+so3);
-    }
+
 </script>
 </body>
 </html>
